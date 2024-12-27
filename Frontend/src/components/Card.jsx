@@ -8,7 +8,6 @@ const Card = () => {
       <h1 className='mb-2 mt-2'>Plumbing</h1>
       <PrimaryBtn text="Explore"/>
     </div>
-
   )
 }
 
