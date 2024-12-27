@@ -3,7 +3,7 @@ import React from 'react'
 
 const Works = () => {
   return (
-    <div className=' border-2 m-4 pb-8 pt-2 rounded-lg shadow-lg'>
+    <div className=' border-2 m-4 pb-8 pt-2 rounded-lg shadow-lg '>
       <h1 className='text-center font-bold mb-4 mt-2 text-5xl'>How It Works</h1>
       <div className='flex justify-center flex-wrap gap-4 items-center'>
         <div className="border p-4 rounded-lg shadow-md">
