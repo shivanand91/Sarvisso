@@ -6,13 +6,15 @@ import { IoClose } from 'react-icons/io5';
 
 const Header = () => {
   const [showNav, SetShowNav] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
   const Links = [
     { name: 'Home', link: '/' },
-    { name: 'Services', link: '/' },
+    { name: 'Services', link: '/service' },
     { name: 'How it Works?', link: '/' },
     { name: 'Shorts', link: '/' },
     { name: 'About us', link: '/' },
   ];
+  
   return (
     <div className='w-full shadow-md md:justify-between bg-primary-color md:top-0 md:left-0 py-4 px-3 md:flex md:items-center'>
       <div
@@ -22,12 +24,12 @@ const Header = () => {
         {showNav ? <IoClose /> : <IoMenu />}
       </div>
       <div className='flex'>
-        <img src={logo} alt='Sarvisso' className='w-10 z-50 ' />
-        <h1 className='text-white text-3xl font-bold z-50'>Sarvisso</h1>
+        <img src={logo} alt='Sarvisso' className='w-10 z-10 ' />
+        <h1 className='text-white text-3xl font-bold z-10'>Sarvisso</h1>
       </div>
       <ul
-        className={`md:flex md:gap-8 md:pl-0 pl-4 absolute md:static bg-primary-color md:z-auto z-[1] left-0 w-full pb-6 items-center md:pb-0 md:w-auto transition-all duration-500 ease-in ${
-          showNav ? 'top-16 z-40' : 'top-[-290px]'
+        className={`md:flex md:gap-8 md:pl-0 pl-4 absolute md:static bg-primary-color  left-0 w-full pb-6 items-center md:pb-0 md:w-auto transition-all duration-500 ease-in ${
+          showNav ? 'top-16 z-50' : 'top-[-290px] z-10'
         }`}
       >
         {Links.map((Link, index) => (
