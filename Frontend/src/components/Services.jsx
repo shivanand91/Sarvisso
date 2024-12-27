@@ -13,10 +13,8 @@ const Services = () => {
         <Card />
         <Card />
         <div className='h-[250px] w-[250px] shadow-lg border-2 flex flex-col justify-center items-center m-auto rounded-lg mt-4'>
-          <div className='h-[140px] w-[140px] bg-gray-200  rounded-md gap-3 flex items-center justify-center'>
-             <button>View All</button>
+             <button className='h-[140px] w-[140px] bg-gray-200  rounded-md gap-3 flex items-center justify-center hover:bg-gray-300'>View All</button>
           </div>
-        </div>
       </div>
     </div>
   )
