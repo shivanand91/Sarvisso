@@ -6,10 +6,10 @@ import { IoClose } from 'react-icons/io5';
 
 const Header = () => {
   const [showNav, SetShowNav] = useState(false);
-  const [isSticky, setIsSticky] = useState(false);
   const Links = [
     { name: 'Home', link: '/' },
-    { name: 'Services', link: '/service' },
+    { name: 'Services', link: '/' },
+    { name: 'Products', link: '/' },
     { name: 'How it Works?', link: '/' },
     { name: 'Shorts', link: '/' },
     { name: 'About us', link: '/' },
