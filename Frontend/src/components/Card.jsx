@@ -8,7 +8,6 @@ const Card = (props) => {
       <h1 className='mb-2 mt-2'>{props.text}</h1>
       <PrimaryBtn text="Explore"/>
     </div>
-
   )
 }
 
