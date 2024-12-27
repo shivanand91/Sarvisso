@@ -38,7 +38,7 @@ export default () => {
         </div>
 
         {/* Overlay Text */}
-        <div className='absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center z-10 text-white text-center px-4 pt-36'>
+        <div className='absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center z-10 text-white text-center px-4'>
           <h1 className='text-4xl font-bold mb-4'>All Your Home Needs, One Platform!</h1>
           <h3 className='text-xl mb-6'>From plumbing to painting, we’ve got you covered.</h3>
           <PrimaryBtn text="Book" />
@@ -51,7 +51,7 @@ export default () => {
         </div>
 
         {/* Overlay Text */}
-        <div className='absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center z-10 text-white text-center px-4 pt-36'>
+        <div className='absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center z-10 text-white text-center px-4'>
           <h1 className='text-4xl font-bold mb-4'>Expert Services at Your Doorstep</h1>
           <h3 className='text-xl mb-6'>Affordable, reliable, and quick solutions for every home.</h3>
           <PrimaryBtn text="Explore Services" />
@@ -64,7 +64,7 @@ export default () => {
         </div>
 
         {/* Overlay Text */}
-        <div className='absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center z-10 text-white text-center px-4 pt-36'>
+        <div className='absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center z-10 text-white text-center px-4'>
           <h1 className='text-4xl font-bold mb-4'>Transform Your Space with Ease</h1>
           <h3 className='text-xl mb-6'>Gardening, renovations, and more - tailored to your needs.</h3>
           <PrimaryBtn text="Shorts" />

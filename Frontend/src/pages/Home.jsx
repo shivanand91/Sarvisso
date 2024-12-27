@@ -3,7 +3,9 @@ import Swiper from '../components/Swiper'
 
 const Home = () => {
   return (
-   <Swiper />
+    <div className='min-h-screen'>
+      <Swiper />
+    </div>
   )
 }
 
