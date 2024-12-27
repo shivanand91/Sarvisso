@@ -1,9 +1,13 @@
 import React from 'react'
 import Swiper from '../components/Swiper'
+import Services from '../components/Services'
 
 const Home = () => {
   return (
-   <Swiper />
+  <div>
+     <Swiper />
+     <Services/>
+  </div>
   )
 }
 
