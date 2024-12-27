@@ -7,8 +7,8 @@ import electric from '../assets/images/electric.webp'
 
 const Services = () => {
   return (
-    <div>
-      <h1 className='text-center font-bold mb-4 mt-4 text-5xl'>Services</h1>
+    <div className='border-2 m-4 px-6 pb-10 rounded-lg bg-primary-color pt-2 shadow-md'>
+      <h1 className='text-center font-bold mb-4 mt-1 text-5xl'>Services</h1>
       <div className='md:flex md:justify-between md:items-center md:gap-8 px-4'>
         <Card text="Plumbing" img={plumb} />
         <Card text="Electrition" img={electric} />
