@@ -10,7 +10,7 @@ const Testimonial = () => {
                 <h1 className='font-bold text-4xl ml-20'>**⭐⭐⭐⭐⭐ Excellent Service!**</h1>
                 <div className='md:flex  md:justify-around'>
                     <div className=' w-[700px] gap-2 '>
-                        <p className='text-4xl '>
+                        <p className='text-4xl pb-4 '>
 
                             Mujhe jo sabse accha laga, woh yeh tha ki har
                             professional ka detailed profile aur rating system hai,
@@ -21,7 +21,7 @@ const Testimonial = () => {
                         </p>
                     </div>
 
-                    <div className='h-[240px] w-[240px] gap-3 z-50 border-2 shadow-2xl rounded-md pb-4'></div>
+                    <div className='h-[240px] w-[240px] gap-3 z-50 border-2 shadow-2xl rounded-md pb-8'></div>
 
                 </div>
 
