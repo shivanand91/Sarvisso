@@ -14,8 +14,8 @@ const Services = () => {
         <Card text="Electrition" img={electric} />
         <Card text="Carpentry" img={clean} />
         <Card text="Interior design" img={clean} />
-        <div className='h-[30px] w-[30px] flex flex-col justify-center items-center mt-52 ml-4 rounded-lg'>
-          <button className='h-[30px] w-[70px] bg-gray-200  rounded-md gap-3 flex items-center justify-center hover:bg-gray-300'>View All</button>
+        <div className='flex  justify-center items-center mt-8 ml-4 rounded-lg'>
+          <button className='h-[30px] w-[70px] bg-gray-200  rounded-md hover:bg-gray-300'>View All</button>
         </div>
       </div>
     </div>

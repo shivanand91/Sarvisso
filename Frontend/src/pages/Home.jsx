@@ -2,10 +2,12 @@ import React from 'react'
 import Swiper from '../components/Swiper'
 import Services from '../components/Services'
 import Works from '../components/Works'
+import RegisterPopUp from '../components/RegisterPopUp'
 
 const Home = () => {
   return (
-  <div>
+    <div>
+      <RegisterPopUp />
      <Swiper />
      <Services/>
      <Works/>
