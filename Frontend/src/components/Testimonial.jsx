@@ -3,7 +3,7 @@ import { BsStarFill } from "react-icons/bs";
 
 const Testimonial = () => {
     return (
-        <div className='flex  flex-col shadow-md border-2 m-4 pt-2 pb-2 rounded-lg px-6'>
+        <div className='flex  flex-col shadow-md border-2 m-4 pt-2 pb-2 rounded-lg px-6 p-4 '>
             <h1 className='text-center font-bold mb-4 mt-4 text-5xl '>Testimonial</h1>
             <div className='flex flex-col'>
 
