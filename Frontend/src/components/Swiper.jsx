@@ -29,7 +29,7 @@ export default () => {
         delay: 5000,
         disableOnInteraction: false,
       }}
-      className='h-[500px] w-full cursor-pointer flex justify-center items-center bg-black z-10'
+      className='h-[500px] w-full cursor-pointer flex justify-center items-center bg-black'
     >
       <SwiperSlide className='w-full h-full flex justify-center items-center relative'>
         {/* Background Image */}
