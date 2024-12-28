@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Swiper from '../components/Swiper'
 import Services from '../components/Services'
 import Works from '../components/Works'
@@ -7,9 +7,12 @@ import Whyuse from '../components/Whyuse'
 import Testimonial from '../components/Testimonial'
 
 const Home = () => {
+  const [showRegister, setShowRegister] = useState(false)
   return (
     <div>
-      <RegisterPopUp />
+      {
+        showRegister && <RegisterPopUp onClose={() => setShowRegister(false) } />
+      }
      <Swiper />
      <Services/>
      <Works/>
