@@ -10,7 +10,11 @@ const Works = () => {
       <div className='h-[160px] w-[160px] shadow-lg border-2 rounded-full flex justify-center items-center  '><h1 className='text-center'>Professionals ko hire Karein</h1></div>
       <div className='h-[160px] w-[160px] shadow-lg border-2 rounded-full flex justify-center items-center  '> <h1 className='text-center'>Kaam Complete karayein</h1></div>
       </div>
+      <div>
+        
+      </div>
     </div>
+    
   )
 }
 
