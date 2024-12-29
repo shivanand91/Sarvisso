@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from '../assets/images/logo1.png';
+import logo from '../assets/images/logo2.png';
 import PrimaryBtn from './PrimaryBtn';
 import RegisterPopUp from './RegisterPopUp';
 import { IoMenu, IoClose } from 'react-icons/io5';
