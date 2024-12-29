@@ -3,6 +3,8 @@ import { IoClose } from "react-icons/io5";
 import registerBg from '../assets/images/registerBG.png';
 import PrimaryBtn from './PrimaryBtn';
 import Secondary from '../components/Secondary';
+import { FcGoogle } from "react-icons/fc";
+import { FaApple } from "react-icons/fa";
 
 const RegisterPopUp = (props) => {
   return (
@@ -12,7 +14,7 @@ const RegisterPopUp = (props) => {
         {/* Close Button */}
         <IoClose
           onClick={props.onClose}
-          className="absolute top-4 right-4 text-3xl text-black bg-white p-2 rounded-full hover:bg-black hover:text-white transition-all duration-300 cursor-pointer z-10"
+          className="absolute top-6 right-28 text-3xl text-black bg-white p-2 rounded-full hover:bg-black hover:text-white transition-all duration-300 cursor-pointer z-10"
         />
 
         <div className="flex flex-col md:flex-row">
@@ -33,13 +35,16 @@ const RegisterPopUp = (props) => {
                 />
                 <Secondary text="Send" />
                 <p className="text-sm md:text-base">-- or --</p>
-                <button className="border-2 w-full md:w-3/4 py-2 shadow-sm rounded-full text-sm md:text-base">
+                <button className="flex justify-center items-center gap-2 border-2 w-full md:w-3/4 py-2 shadow-sm rounded-full text-sm md:text-base">
+                  <FcGoogle className='text-xl'/>
                   Continue with Google
                 </button>
-                <button className="border-2 w-full md:w-3/4 py-2 shadow-sm rounded-full text-sm md:text-base">
+                <button className="flex justify-center items-center gap-2 border-2 w-full md:w-3/4 py-2 shadow-sm rounded-full text-sm md:text-base">
+                  <FaApple className='text-xl'/>
                   Continue with Apple
                 </button>
-                <button className="border-2 w-full md:w-3/4 py-2 shadow-sm rounded-full text-sm md:text-base">
+                <button className="flex justify-center items-center gap-2 border-2 w-full md:w-3/4 py-2 shadow-sm rounded-full text-sm md:text-base">
+                
                   Continue with Email
                 </button>
                 <p className="text-sm md:text-base">
@@ -57,7 +62,7 @@ const RegisterPopUp = (props) => {
             <img
               src={registerBg}
               alt="Register Background"
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover md:block hidden"
             />
           </div>
         </div>
