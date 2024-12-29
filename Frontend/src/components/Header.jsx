@@ -44,7 +44,7 @@ const Header = () => {
         </li>
         {
           loggedIn ? <Link to={"/profile"}>
-            <div className='h-[40px] w-[40px] bg-red-500 rounded-full flex justify-center items-center text-4xl md:my-0 my-2'>
+            <div className='h-[40px] w-[40px] shadow-lg border rounded-full flex justify-center items-center text-3xl md:my-0 my-2'>
               <CgProfile />
             </div>
           </Link>
