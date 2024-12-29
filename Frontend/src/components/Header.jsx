@@ -24,37 +24,46 @@ const Header = () => {
         <h1 className="text-white text-3xl font-bold ">Sarvisso</h1>
       </div>
       <ul
-        className={`md:flex md:gap-8 md:pl-0 pl-4 text-white left-0 absolute md:static bg-primary-color w-full pb-6 items-center md:pb-0 md:w-auto transition-all duration-500 ease-in ${
-          showNav ? 'top-16 z-50' : 'top-[-290px] z-10'
-        }`}
+        className={`md:flex md:gap-8 md:pl-0 pl-4 text-white left-0 absolute md:static bg-primary-color w-full pb-6 items-center md:pb-0 md:w-auto transition-all duration-500 ease-in  ${showNav ? 'top-16 z-50' : 'top-[-290px] z-10'
+          }`}
       >
-         <Link to={"/"}>Home</Link>
-         <Link>Services</Link>
-         <Link>Products</Link>
-        <Link to={"/about"}>About us</Link>
-        <Link>Contact us</Link>
+        <li className='py-2'>
+          <Link to={"/"}>Home</Link>
+        </li>
+        <li className='py-2'>
+          <Link>Services</Link>
+        </li>
+        <li className='py-2'>
+          <Link>Products</Link>
+        </li>
+        <li className='py-2'>
+          <Link to={"/about"}>About us</Link>
+        </li>
+        <li className='py-2'>
+          <Link>Contact us</Link>
+        </li>
         {
-          loggedIn ? <Link  to={"/profile"}>
-            <div className='h-[40px] w-[40px] bg-red-500 rounded-full flex justify-center items-center text-4xl'>
-              <CgProfile /> 
-          </div> 
+          loggedIn ? <Link to={"/profile"}>
+            <div className='h-[40px] w-[40px] bg-red-500 rounded-full flex justify-center items-center text-4xl md:my-0 my-2'>
+              <CgProfile />
+            </div>
           </Link>
             : ""
         }
 
         {
           loggedIn ? "" : <div className="flex gap-1 pt-2">
-          <PrimaryBtn text="Register" onClick={() => setShowRegister(true)} /> {/* Show Popup */}
-          <p className="text-2xl text-white">-</p>
-          <PrimaryBtn text="Login" onClick={() => setShowRegister(true)} />
-        </div>
+            <PrimaryBtn text="Register" onClick={() => setShowRegister(true)} /> {/* Show Popup */}
+            <p className="text-2xl text-white">-</p>
+            <PrimaryBtn text="Login" onClick={() => setShowRegister(true)} />
+          </div>
         }
 
 
       </ul >
 
-  {/* Render RegisterPopUp */ }
-{ showRegister && <RegisterPopUp onClose={() => setShowRegister(false)} /> }
+      {/* Render RegisterPopUp */}
+      {showRegister && <RegisterPopUp onClose={() => setShowRegister(false)} />}
     </div >
   );
 };
