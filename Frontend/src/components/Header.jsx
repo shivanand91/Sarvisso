@@ -48,11 +48,7 @@ const Header = () => {
               <CgProfile />
             </div>
           </Link>
-            : ""
-        }
-
-        {
-          loggedIn ? "" : <div className="flex gap-1 pt-2">
+            : <div className="flex gap-1 pt-2">
             <PrimaryBtn text="Register" onClick={() => setShowRegister(true)} /> {/* Show Popup */}
             <p className="text-2xl text-white">-</p>
             <PrimaryBtn text="Login" onClick={() => setShowRegister(true)} />
