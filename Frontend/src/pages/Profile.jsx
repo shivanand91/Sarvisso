@@ -40,7 +40,7 @@ const Profile = () => {
         {/* Menu Section */}
         <div className="flex flex-col gap-4">
           {menuItems.map(({ to, icon, label }) => (
-            <Link key={to} to={to} className="icon-text flex sm:items-center gap-2 text-base sm:text-lg">
+            <Link key={to} to={to} className="icon-text flex sm:items-center gap-2 text-base sm:text-lg hover:bg-gray-200 p-2 rounded-md">
               {icon}
               <span className="hidden sm:inline">{label}</span>
             </Link>
@@ -49,9 +49,14 @@ const Profile = () => {
       </div>
 
       {/* Main Content */}
-      <div className="sm:col-span-9 bg-white shadow-lg rounded-lg p-6">
+      <div className="sm:col-span-9 bg-white shadow-lg rounded-lg p-6 w-full h-full">
         <h1 className="text-2xl font-bold">Welcome to Your Profile</h1>
         <p className="mt-2 text-gray-600">Here you can manage your information, bookings, and more.</p>
+
+        <div className='w-full h-[720px] border shadow-lg mt-8 rounded-lg '>
+
+        </div>
+
       </div>
     </div>
   );
