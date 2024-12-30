@@ -2,14 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Shiva from '../assets/images/Shiva.jpg';
 import { FaRegStar, FaHistory, FaShareAlt } from "react-icons/fa";
-import { IoInformationCircleOutline, IoIosNotificationsOutline } from "react-icons/io";
+import { IoIosNotificationsOutline } from "react-icons/io";
+import { IoMdInformationCircleOutline } from "react-icons/io";
 import { FaRegAddressCard } from "react-icons/fa6";
 import { MdOutlinePayment, MdOutlineHomeRepairService, MdOutlineGroups } from "react-icons/md";
 import { RiUserCommunityLine, RiFeedbackLine } from "react-icons/ri";
 
 const Profile = () => {
   const menuItems = [
-    { to: '/personal-information', icon: <IoInformationCircleOutline />, label: 'Personal Information' },
+    { to: '/personal-information', icon: <IoMdInformationCircleOutline />, label: 'Personal Information' },
     { to: '/address-details', icon: <FaRegAddressCard />, label: 'Address Details' },
     { to: '/payment-method', icon: <MdOutlinePayment />, label: 'Payment Method' },
     { to: '/services', icon: <MdOutlineHomeRepairService />, label: 'Services' },
