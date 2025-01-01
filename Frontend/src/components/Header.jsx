@@ -31,7 +31,7 @@ const Header = () => {
           <Link to={"/"}>Home</Link>
         </li>
         <li className='py-2'>
-          <Link>Services</Link>
+          <Link to={"/services"}>Services</Link>
         </li>
         <li className='py-2'>
           <Link>Products</Link>
